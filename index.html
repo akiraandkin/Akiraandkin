@@ -561,12 +561,58 @@ document.addEventListener('mousemove', e => {
 
 // POSTS
 const posts = [
-  { type:'yt', ytId:'BJlUHnixz3g', cap:'Bayaside — Official Video', href:'https://www.youtube.com/watch?v=BJlUHnixz3g', wide:true },
-  { type:'reel', thumb:'https://scontent-iad6-1.cdninstagram.com/v/t51.75761-15/476475068_17870244345293253_734536759388417180_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=106&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=-Ud8VHTqY3gQ7kNvwHtqPbY&_nc_oc=Adp-uWdOgl5oPT7Sk9GZa4XFEzkXg3LPLnUgNStqakvvEMoCWY5WqFEBLbkahZpS7Ws&_nc_zt=23&_nc_ht=scontent-iad6-1.cdninstagram.com&edm=ANo9K5cEAAAA&_nc_gid=0KWdeAk9AHJTacMSXonjBA&oh=00_Af5lBD-g29aDnjthhiFW1Ajbfhezld-KjYUxeKBzBsnE2Q&oe=6A0615A5', cap:'Every beat has a story — New Video Song Coming Soon!', likes:32, comments:2, href:'https://www.instagram.com/reel/DFwrLzgT4Yq/' },
-  { type:'reel', thumb:'https://scontent-iad6-1.cdninstagram.com/v/t51.71878-15/503131084_1008845471407991_940185764947256005_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=100&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=tFSqs0-fUMcQ7kNvwFe21Gv&_nc_oc=Adr9iMWiDmH2tmoioU0GSiqE3ZH6lQzb7NNeH4zjMgYgstmfIOju22j4X5Fmzl69qcM&_nc_zt=23&_nc_ht=scontent-iad6-1.cdninstagram.com&edm=ANo9K5cEAAAA&_nc_gid=0KWdeAk9AHJTacMSXonjBA&oh=00_Af6ZD2Ils_LAbkSB8UAT0PzvVyJc6p48Fjz69Ym3FpF1Ew&oe=6A0631A5', cap:'#Bayaside — Fusion of vibes & electronic beats like never before!', likes:28, comments:5, href:'https://www.instagram.com/reel/DFvS-owz_9Z/' },
-  { type:'photo', thumb:'https://scontent-iad6-1.cdninstagram.com/v/t51.71878-15/625052361_1250191850361089_8294243598190173909_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=102&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=v2KpolGGyuYQ7kNvwH7E0NI&_nc_oc=AdpeLy8WaSGEPgy4ECHlxEnURh_uKE45jzoRZgd1pYyry3FSG2k7d7gre8ATtaPaoJI&_nc_zt=23&_nc_ht=scontent-iad6-1.cdninstagram.com&edm=ANo9K5cEAAAA&_nc_gid=0KWdeAk9AHJTacMSXonjBA&oh=00_Af7VRtCqj-Kay78621Bbs3R4ZxPDtJeszSzDD-8ejK6SUw&oe=6A0640DF', cap:'Bayaside — Streaming on all platforms. Link in bio!', likes:19, comments:3, href:'https://www.instagram.com/p/DFuVkwws3O5/' },
-  { type:'reel', thumb:'https://scontent-iad3-1.cdninstagram.com/v/t51.75761-15/475873102_17869378182293253_2377371666027374460_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=108&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=QMaSddF303QQ7kNvwFMOFqs&_nc_oc=Adr4_8OOoWHNS9k387zSb546Cmd3BLJhihJ_ZRLUbGyTXea1ySswMvgU4V92nr4TLDo&_nc_zt=23&_nc_ht=scontent-iad3-1.cdninstagram.com&edm=ANo9K5cEAAAA&_nc_gid=0KWdeAk9AHJTacMSXonjBA&oh=00_Af44fB3XiDey9auVTMGD42x9bBdFOpUr2-a0pBCuT6ftPg&oe=6A062225', cap:'Lyrical Video — Streaming now. YouTube Link in Bio.', likes:15, comments:4, href:'https://www.instagram.com/reel/DFfJAtSzi_c/' },
-  { type:'reel', thumb:'https://scontent-iad6-1.cdninstagram.com/v/t51.71878-15/500446734_1197751175381147_8809251627340567994_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=106&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=4CvrGuckEM4Q7kNvwG1nGqT&_nc_oc=AdqJKVKeLA3JqTqU6mCkwzHmod-PQo6brGyNIKEBDKeJ6XgURgvloEXeURJtd_RIT28&_nc_zt=23&_nc_ht=scontent-iad6-1.cdninstagram.com&edm=ANo9K5cEAAAA&_nc_gid=0KWdeAk9AHJTacMSXonjBA&oh=00_Af55s8TVXTbwMIaRR0kx3TtaPxlxUA8P3mwBG46ZPY_jcg&oe=6A0639C3', cap:'A love that runs, a heart that races — Bayaside, the soundtrack to your pursuit.', likes:17, comments:3, href:'https://www.instagram.com/reel/DFeig3Zo4Tu/' },
+  {
+    type:'yt',
+    ytId:'BJlUHnixz3g',
+    cap:'Bayaside — Official Video',
+    href:'https://www.youtube.com/watch?v=BJlUHnixz3g',
+    wide:true
+  },
+
+  {
+    type:'reel',
+    thumb:'images/1.png',
+    cap:'Every beat has a story — New Video Song Coming Soon!',
+    likes:32,
+    comments:2,
+    href:'https://www.instagram.com/reel/DFwrLzgT4Yq/'
+  },
+
+  {
+    type:'reel',
+    thumb:'images/2.png',
+    cap:'#Bayaside — Fusion of vibes & electronic beats like never before!',
+    likes:28,
+    comments:5,
+    href:'https://www.instagram.com/reel/DFvS-owz_9Z/'
+  },
+
+  {
+    type:'photo',
+    thumb:'images/3.png',
+    cap:'Bayaside — Streaming on all platforms. Link in bio!',
+    likes:19,
+    comments:3,
+    href:'https://www.instagram.com/p/DFuVkwws3O5/'
+  },
+
+  {
+    type:'reel',
+    thumb:'images/4.png',
+    cap:'Lyrical Video — Streaming now. YouTube Link in Bio.',
+    likes:15,
+    comments:4,
+    href:'https://www.instagram.com/reel/DFfJAtSzi_c/'
+  },
+
+  {
+    type:'reel',
+    thumb:'images/2.png',
+    cap:'A love that runs, a heart that races — Bayaside.',
+    likes:17,
+    comments:3,
+    href:'https://www.instagram.com/reel/DFeig3Zo4Tu/'
+  }
 ];
 
 function typeLabel(t) {
